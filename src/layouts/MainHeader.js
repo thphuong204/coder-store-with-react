@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 
-import Logo from "../components/Logo";
+import Logo from "../components/logo.js";
 
 function MainHeader() {
 
