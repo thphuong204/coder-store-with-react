@@ -6,8 +6,10 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 
 import Logo from "../components/logo.js";
+import useAuth from "../hooks/useAuth";
 
 function MainHeader() {
+    const { user } = useAuth();
 
     return (
         <Box>
@@ -26,7 +28,7 @@ function MainHeader() {
                     </Typography>
                     <Box sx={{ flexGrow: 1 }} />
                     <Typography variant="h6" color="inherit" component="div">
-                        Welcome
+                        Welcome {user?.username}!
                     </Typography>
                 </Toolbar>
             </AppBar>
