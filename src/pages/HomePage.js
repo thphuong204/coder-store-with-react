@@ -37,11 +37,12 @@ function HomePage() {
                 setProducts(res.data);
                 setError("");
             } catch (error) {
-                console.log(error);
+                console.log(error.statusCode);
                 setError(error.message);
             }
             setLoading(false);
         };
+
         getProducts();
     }, []);
 
